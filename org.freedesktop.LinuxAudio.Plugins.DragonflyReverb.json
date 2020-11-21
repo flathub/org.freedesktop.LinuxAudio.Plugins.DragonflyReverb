@@ -13,8 +13,17 @@
         {
             "name": "dragonflyreverb",
             "buildsystem": "simple",
+            "build-options": {
+                "arch": {
+                    "aarch64": {
+                        "env": {
+                            "NOOPT": "true"
+                        }
+                    }
+                }
+            },
             "build-commands": [
-                "make"
+                "make NOOPT=${NOOPT}"
             ],
             "post_install": [
                 "install -d ${FLATPAK_DEST}/lv2",
