@@ -33,6 +33,12 @@
     <update_contact>hub_AT_figuiere.net</update_contact>
     <url type="homepage">https://michaelwillis.github.io/dragonfly-reverb</url>
     <releases>
-        <release date="2020-08-27" version="3.2.1" />
+      <release date="2020-12-07" version="3.2.3">
+        <description>
+          <p>Fix bug initializing dials and sliders that are set to
+          zero upon loading the plugin.</p>
+        </description>
+      </release>
+      <release date="2020-08-27" version="3.2.1" />
     </releases>
 </component>
