@@ -33,6 +33,16 @@
     <update_contact>hub_AT_figuiere.net</update_contact>
     <url type="homepage">https://michaelwillis.github.io/dragonfly-reverb</url>
     <releases>
+      <release date="2021-03-04" version="3.2.5">
+        <description>
+          <ul>
+            <li>Attempt to fix issue when mod is set to zero in Dragonfly Hall.</li>
+            <li>Updated license to URI (to pass LV2 lint).</li>
+            <li>Updated homepage URI.</li>
+            <li>Fixed env var reference PKG_CONFIG in Makefiles.</li>
+          </ul>
+        </description>
+      </release>
       <release date="2020-12-07" version="3.2.3">
         <description>
           <p>Fix bug initializing dials and sliders that are set to
