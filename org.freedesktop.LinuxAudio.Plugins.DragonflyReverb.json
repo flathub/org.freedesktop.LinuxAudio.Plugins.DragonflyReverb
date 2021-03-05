@@ -37,8 +37,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/michaelwillis/dragonfly-reverb.git",
-                    "tag": "3.2.3",
-                    "commit": "4f2ac0b81ab89ea1c23efa265ca59a578ecd15f7"
+                    "tag": "3.2.5",
+                    "commit": "e2b5002c6ae1d23e9c0f76ffefb89e36675c81ee"
                 },
                 {
                     "type": "file",
