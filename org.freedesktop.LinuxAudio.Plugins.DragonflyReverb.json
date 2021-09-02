@@ -1,11 +1,11 @@
 {
     "id": "org.freedesktop.LinuxAudio.Plugins.DragonflyReverb",
     "runtime": "org.freedesktop.LinuxAudio.BaseExtension",
-    "sdk": "org.freedesktop.Sdk//20.08",
-    "runtime-version": "20.08",
+    "sdk": "org.freedesktop.Sdk//21.08",
+    "runtime-version": "21.08",
     "build-extension": true,
     "appstream-compose": false,
-    "branch": "20.08",
+    "branch": "21.08",
     "build-options": {
         "prefix": "/app/extensions/Plugins/DragonflyReverb"
     },
