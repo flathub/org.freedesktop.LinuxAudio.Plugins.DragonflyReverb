@@ -3,9 +3,9 @@
     <id>org.freedesktop.LinuxAudio.Plugins.DragonflyReverb</id>
     <extends>org.freedesktop.LinuxAudio.BaseExtension</extends>
     <name>DragonflyReverb</name>
-    <summary>DragonflyReverb LV2/VST</summary>
+    <summary>DragonflyReverb LV2/VST/VST3</summary>
     <description>
-      <p>Dragonfly Reverb is a bundle of free audio effect plugins (LV2 and VST).</p>
+      <p>Dragonfly Reverb is a bundle of free audio effect plugins (LV2, VST and VST3).</p>
       <ul>
         <li>Dragonfly Hall Reverb is a free stereo-to-stereo reverb
         effect. It is primarily intended for use as a concert hall
@@ -33,6 +33,11 @@
     <update_contact>hub_AT_figuiere.net</update_contact>
     <url type="homepage">https://michaelwillis.github.io/dragonfly-reverb</url>
     <releases>
+      <release date="2022-03-31" version="3.2.6">
+        <description>
+          <p>Attempt at fixing bug on HiDPI displays and added VST3</p>
+        </description>
+      </release>
       <release date="2021-03-04" version="3.2.5">
         <description>
           <ul>
