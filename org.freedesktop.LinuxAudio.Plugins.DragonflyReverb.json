@@ -1,8 +1,8 @@
 {
     "id": "org.freedesktop.LinuxAudio.Plugins.DragonflyReverb",
     "runtime": "org.freedesktop.LinuxAudio.BaseExtension",
-    "sdk": "org.freedesktop.Sdk//22.08",
     "runtime-version": "stable",
+    "sdk": "org.freedesktop.Sdk//22.08",
     "build-extension": true,
     "appstream-compose": false,
     "branch": "22.08",
@@ -31,6 +31,7 @@
                 "install -Dm755 -t ${FLATPAK_DEST}/vst bin/*-vst.so",
                 "install -d ${FLATPAK_DEST}/vst3",
                 "cp -r bin/*.vst3 ${FLATPAK_DEST}/vst3",
+                "install -Dm755 bin/*.clap -t ${FLATPAK_DEST}/clap",
                 "install -Dm644 LICENSE ${FLATPAK_DEST}/share/licenses/dragonflyreverb",
                 "install -Dm644 -t ${FLATPAK_DEST}/share/metainfo org.freedesktop.LinuxAudio.Plugins.DragonflyReverb.metainfo.xml",
                 "appstream-compose --basename=org.freedesktop.LinuxAudio.Plugins.DragonflyReverb --prefix=${FLATPAK_DEST} --origin=flatpak org.freedesktop.LinuxAudio.Plugins.DragonflyReverb"
@@ -39,8 +40,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/michaelwillis/dragonfly-reverb.git",
-                    "tag": "3.2.6",
-                    "commit": "465bfa2586a06ec9bd8684a84f402a275e8b65aa"
+                    "tag": "3.2.7",
+                    "commit": "3523f70251066883fcc186f4bef4e9c17a03a0c5"
                 },
                 {
                     "type": "file",
