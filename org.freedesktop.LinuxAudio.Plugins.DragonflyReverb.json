@@ -23,9 +23,7 @@
                 }
             },
             "build-commands": [
-                "make NOOPT=${NOOPT}"
-            ],
-            "post_install": [
+                "make -j $FLATPAK_BUILDER_N_JOBS",
                 "install -d ${FLATPAK_DEST}/lv2",
                 "cp -r bin/*.lv2 ${FLATPAK_DEST}/lv2",
                 "install -Dm755 -t ${FLATPAK_DEST}/vst bin/*-vst.so",
@@ -33,15 +31,29 @@
                 "cp -r bin/*.vst3 ${FLATPAK_DEST}/vst3",
                 "install -Dm755 bin/*.clap -t ${FLATPAK_DEST}/clap",
                 "install -Dm644 LICENSE ${FLATPAK_DEST}/share/licenses/dragonflyreverb",
-                "install -Dm644 -t ${FLATPAK_DEST}/share/metainfo org.freedesktop.LinuxAudio.Plugins.DragonflyReverb.metainfo.xml",
+                "install -Dm644 org.freedesktop.LinuxAudio.Plugins.DragonflyReverb.metainfo.xml -t ${FLATPAK_DEST}/share/metainfo",
                 "appstream-compose --basename=org.freedesktop.LinuxAudio.Plugins.DragonflyReverb --prefix=${FLATPAK_DEST} --origin=flatpak org.freedesktop.LinuxAudio.Plugins.DragonflyReverb"
             ],
             "sources": [
                 {
                     "type": "git",
                     "url": "https://github.com/michaelwillis/dragonfly-reverb.git",
-                    "tag": "3.2.7",
-                    "commit": "3523f70251066883fcc186f4bef4e9c17a03a0c5"
+                    "tag": "3.2.8",
+                    "disable-submodules": true,
+                    "commit": "d87f5e43157cd0235df3c43fc552a92857db4822"
+                },
+                {
+                    "type": "git",
+                    "url": "https://github.com/DISTRHO/DPF.git",
+                    "commit": "22413340a6d8ef2ffbf38ce841fb44c448a1a84a",
+                    "disable-submodules": true,
+                    "dest": "dpf"
+                },
+                {
+                    "type": "archive",
+                    "url": "https://github.com/DISTRHO/pugl/archive/3e03459a5a0b0f118b04e9e0b0a32f42ccd04a5c.zip",
+                    "sha256": "6cf90b4fd7d92243b5a1f3a77041831f8d5c8599556238ffe53ab163fdf82f57",
+                    "dest": "dpf/dgl/src/pugl-upstream"
                 },
                 {
                     "type": "file",

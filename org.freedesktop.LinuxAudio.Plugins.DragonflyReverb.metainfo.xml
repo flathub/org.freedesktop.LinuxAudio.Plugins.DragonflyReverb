@@ -33,6 +33,15 @@
     <update_contact>hub_AT_figuiere.net</update_contact>
     <url type="homepage">https://michaelwillis.github.io/dragonfly-reverb</url>
     <releases>
+      <release date="2022-12-28" version="3.2.8">
+        <description>
+          <ul>
+            <li>Fix bug in which setting predelay to zero does not
+            update dsp predelay</li>
+            <li>Update to latest DPF - fixes CLAP on Linux</li>
+          </ul>
+        </description>
+      </release>
       <release date="2022-09-25" version="3.2.7">
         <description>
           <p>Added CLAP plugin</p>
