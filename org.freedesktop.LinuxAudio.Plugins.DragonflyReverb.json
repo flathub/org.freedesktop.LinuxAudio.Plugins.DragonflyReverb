@@ -40,7 +40,12 @@
                     "url": "https://github.com/michaelwillis/dragonfly-reverb.git",
                     "tag": "3.2.8",
                     "disable-submodules": true,
-                    "commit": "d87f5e43157cd0235df3c43fc552a92857db4822"
+                    "commit": "d87f5e43157cd0235df3c43fc552a92857db4822",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^([\\d.]+)$",
+                        "is-main-source": true
+                    }
                 },
                 {
                     "type": "git",
