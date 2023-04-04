@@ -38,27 +38,13 @@
                 {
                     "type": "git",
                     "url": "https://github.com/michaelwillis/dragonfly-reverb.git",
-                    "tag": "3.2.8",
-                    "disable-submodules": true,
-                    "commit": "d87f5e43157cd0235df3c43fc552a92857db4822",
+                    "tag": "3.2.9",
+                    "commit": "6da3cce2598b8a6214ccf86ae7ed451aa13602d2",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$",
                         "is-main-source": true
                     }
-                },
-                {
-                    "type": "git",
-                    "url": "https://github.com/DISTRHO/DPF.git",
-                    "commit": "22413340a6d8ef2ffbf38ce841fb44c448a1a84a",
-                    "disable-submodules": true,
-                    "dest": "dpf"
-                },
-                {
-                    "type": "archive",
-                    "url": "https://github.com/DISTRHO/pugl/archive/3e03459a5a0b0f118b04e9e0b0a32f42ccd04a5c.zip",
-                    "sha256": "6cf90b4fd7d92243b5a1f3a77041831f8d5c8599556238ffe53ab163fdf82f57",
-                    "dest": "dpf/dgl/src/pugl-upstream"
                 },
                 {
                     "type": "file",

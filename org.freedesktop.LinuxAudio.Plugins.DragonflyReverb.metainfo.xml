@@ -33,6 +33,11 @@
     <update_contact>hub_AT_figuiere.net</update_contact>
     <url type="homepage">https://michaelwillis.github.io/dragonfly-reverb</url>
     <releases>
+      <release date="2023-04-03" version="3.2.9">
+        <description>
+          <p>Disable denormals during all DSP</p>
+        </description>
+      </release>
       <release date="2022-12-28" version="3.2.8">
         <description>
           <ul>
