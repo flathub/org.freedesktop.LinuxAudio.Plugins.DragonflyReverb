@@ -36,15 +36,9 @@
             ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://github.com/michaelwillis/dragonfly-reverb.git",
-                    "tag": "3.2.9",
-                    "commit": "6da3cce2598b8a6214ccf86ae7ed451aa13602d2",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^([\\d.]+)$",
-                        "is-main-source": true
-                    }
+                    "type": "archive",
+                    "url": "https://github.com/michaelwillis/dragonfly-reverb/releases/download/3.2.10/dragonfly-reverb-3.2.10-src.tar.xz",
+                    "sha256": "18af55a9592c9f50c4d5f86c9d5159132735d9ba53d49e9cfe7169b3109f7743"
                 },
                 {
                     "type": "file",
