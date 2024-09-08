@@ -2,10 +2,9 @@
     "id": "org.freedesktop.LinuxAudio.Plugins.DragonflyReverb",
     "runtime": "org.freedesktop.LinuxAudio.BaseExtension",
     "runtime-version": "stable",
-    "sdk": "org.freedesktop.Sdk//23.08",
+    "sdk": "org.freedesktop.Sdk//24.08",
     "build-extension": true,
-    "appstream-compose": false,
-    "branch": "23.08",
+    "branch": "24.08",
     "build-options": {
         "prefix": "/app/extensions/Plugins/DragonflyReverb"
     },
@@ -31,8 +30,7 @@
                 "cp -r bin/*.vst3 ${FLATPAK_DEST}/vst3",
                 "install -Dm755 bin/*.clap -t ${FLATPAK_DEST}/clap",
                 "install -Dm644 LICENSE ${FLATPAK_DEST}/share/licenses/dragonflyreverb",
-                "install -Dm644 org.freedesktop.LinuxAudio.Plugins.DragonflyReverb.metainfo.xml -t ${FLATPAK_DEST}/share/metainfo",
-                "appstream-compose --basename=org.freedesktop.LinuxAudio.Plugins.DragonflyReverb --prefix=${FLATPAK_DEST} --origin=flatpak org.freedesktop.LinuxAudio.Plugins.DragonflyReverb"
+                "install -Dm644 org.freedesktop.LinuxAudio.Plugins.DragonflyReverb.metainfo.xml -t ${FLATPAK_DEST}/share/metainfo"
             ],
             "sources": [
                 {
